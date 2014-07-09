@@ -14,7 +14,7 @@
 # OTRS admin login/password: root@localhost/root
 # SSH  login/password: root/changeme
 
-FROM centos:6.4
+FROM centos:centos6
 
 # install SSH
 RUN yum install -y openssh-server openssh-clients passwd
