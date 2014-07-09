@@ -1,6 +1,9 @@
 #!/bin/bash
 
 set -e
+/usr/bin/mysql_install_db --datadir=/var/lib/mysql --user=mysql
+# Workaround for some versions of /etc/init.d/mysqld
+touch /etc/sysconfig/network
 rpm -ivh http://ftp.otrs.org/pub/otrs/RPMS/rhel/6/otrs-3.2.5-01.noarch.rpm 
 /etc/init.d/mysqld start
 mysql -u root mysql < /opt/setup-otrs/create_otrs_db.sql

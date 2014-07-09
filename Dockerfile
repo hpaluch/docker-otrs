@@ -48,10 +48,8 @@ RUN yum install -y python-pip && pip install pip --upgrade
 RUN pip install supervisor
 ADD supervisord.conf /etc/
 
-# MySQL bootstrap - database otrs/ password otrs
+# bootstrap otrs
 ADD setup-otrs /opt/setup-otrs
-RUN /usr/bin/mysql_install_db --datadir=/var/lib/mysql --user=mysql
-RUN touch /etc/sysconfig/network
 RUN /opt/setup-otrs/bootstrap_otrs.sh
 
 # export SSH port
