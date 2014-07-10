@@ -20,5 +20,6 @@ mysql -u root otrs < /opt/setup-otrs/otrs_tables.sql
 /etc/init.d/mysqld stop
 chown -R otrs:apache /opt/otrs
 chmod -R g+rwX /opt/otrs
-sync
+ls -l /
+exit 0
 
