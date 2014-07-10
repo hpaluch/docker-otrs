@@ -13,6 +13,13 @@ You need to have docker installed See https://docs.docker.com/installation/ubunt
 Using and running latest image from automated build
 ---------------------------------------------------
 
+Warning: automated builds do NOT work with docker 0.9.1
+due filesystem permissions problems. Use this command to verify your docker version:
+
+	docker -v
+
+Workaround: build from source or use recent docker (for example 1.0.1 from boot2docker.iso or 1.1.1 from lxc-docker Ubuntu package).
+
 Pull image
 ----------
 
