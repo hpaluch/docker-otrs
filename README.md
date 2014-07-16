@@ -1,7 +1,7 @@
-Docker running OTRS 3.2 ( with ITSM, FAQ, Support plugins) and MySQL
-====================================================================
+Docker running OTRS 2.4.6 ( with ITSM, FAQ, Support plugins) and MySQL
+======================================================================
 
-Here is simple Dockerfile to build OTRS 3.2 image to be run in Docker containers.
+Here is simple Dockerfile to build OTRS 2.4.6 image to be run in Docker containers.
 
 Note: it is not suitable for production (hardcoded passwords, single container, no special volume for database...). However it is well suited for development and installation testing (using docker commit etc).
 
