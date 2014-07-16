@@ -17,7 +17,7 @@
 FROM centos:centos6
 
 # install required packages
-RUN yum install -y openssh-server openssh-clients passwd  \
+RUN yum install -y openssh-server openssh-clients passwd tar \
                mysql-server mysql \
                httpd mod_ssl && \
  rpm -ivh \
